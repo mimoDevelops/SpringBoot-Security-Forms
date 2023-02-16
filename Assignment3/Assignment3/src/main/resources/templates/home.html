@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" 
+xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous" />
+  
+<meta charset="UTF-8">
+<div class="main">
+<title>Joshua Farias Portfolio's Access</title>
+</head>
+<body>
+
+<h1 th:text="${session.message}"></h1>
+
+
+<form method="post" action="/formPost" style="max-width: 350px; margin: 0 auto;">
+
+
+What is thy name : <input type="text" name="name"/>
+<br>
+Rows: <input type="number" name="rows"/> 
+<br>
+
+Columns: <input type="number" name="columns"/>
+<br>
+
+X Position of traveler  : <input type="number" name="xPos"/>
+<br>
+Y Position of traveler  : <input type="number" name="yPos"/>
+<br>
+
+How many turns ? : <input type="number" name="numTurns"/>
+<br>
+
+<input type="submit" value="Go!" />
+</body>
+</html>

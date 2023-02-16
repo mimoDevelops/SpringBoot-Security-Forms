@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" 
+xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous" />
+  
+<meta charset="UTF-8">
+<div class="main">
+<title>Joshua Farias Portfolio's Access</title>
+</head>
+<br>
+<br>
+<b>
+<p th:text="${session.name}"></p>
+
+<p th:text="${session.xPos}"></p>
+
+<p th:text="${session.yPos}"></p>
+
+<p th:text="${session.userAns}"></p>
+
+<p th:text="${session.numTurns}"></p>
+
+<p th:text="${session.avgMoves}"></p>
+
+<p th:text="${session.standardDev}"></p>
+
+<H3> <a href="/home"> TRY AGAIN </a></H3>
+<H3> GO BACK TO <a href="/user"> USER </a> PAGE</b> </H3>
+
+
+
+</html>
